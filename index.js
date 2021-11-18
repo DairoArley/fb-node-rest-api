@@ -11,11 +11,10 @@ const authRoute = require('./routes/auth')
 dotenv.config()
 
 mongoose.connect(
-  process.env.MONGO_URL,
-  { useNewUrlParser: true, useUnifiedTopology: true },
-  () => {
-    console.info('conectado a Mongo mejorado')
-  }
+    process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true },
+    () => {
+        console.info('conectado a Mongo mejorado')
+    }
 )
 
 // middleware
